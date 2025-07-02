@@ -22,21 +22,15 @@ following arguments:
 - `-t` : investment term - format `YyMm`
 - `-p` : interest payment term (e.g, `MONTHLY`, `QUARTERLY`, `ANNUALLY`, `AT_MATURITY`)
 
-Example:
-Deposit Amount: $10,000
-Interest Rate: 1.1%
-Investment Term: 3 years
-Interest Paid: AT_MATURITY
+### Example 1
+Deposit Amount: $10,000, Interest Rate: 1.1%, Investment Term: 3 years, Interest Paid: AT_MATURITY
 
 ```sh
 ./term_deposit_calculator.py -d 10000 -i 1.1 -t 3y -p AT_MATURITY
 ```
 
-Example:
-Deposit Amount: $50,000
-Interest Rate: 1.7%
-Investment Term: 2 years and 6 months
-Interest Paid: MONTHLY
+### Example 2
+Deposit Amount: $50,000, Interest Rate: 1.7%, Investment Term: 2 years and 6 months, Interest Paid: MONTHLY
 
 ```sh
 ./term_deposit_calculator.py -d 50000 -i 1.7 -t 2y6m -p MONTHLY
