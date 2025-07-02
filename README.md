@@ -4,7 +4,15 @@ A Term Deposit Calculator CLI Tool built using Python
 
 ## Setup
 
-With Python installed on your system, setup a virtual environment for package consistency:
+Clone the repository and change into the repo directory:
+
+```sh
+git clone git@github.com:jasperRob/term-deposit-calculator.git
+cd term-deposit-calculator
+```
+
+With Python installed on your system, setup a virtual environment and
+install packages from `requirements.txt`:
 
 ```sh
 python -m venv venv
@@ -23,14 +31,18 @@ following arguments:
 - `-p` : interest payment term (e.g, `MONTHLY`, `QUARTERLY`, `ANNUALLY`, `AT_MATURITY`)
 
 ### Example 1
-Deposit Amount: $10,000, Interest Rate: 1.1%, Investment Term: 3 years, Interest Paid: AT_MATURITY
+
+Deposit Amount: $10,000, Interest Rate: 1.1%, Investment Term: 3 years,
+Interest Paid: AT_MATURITY
 
 ```sh
 ./term_deposit_calculator.py -d 10000 -i 1.1 -t 3y -p AT_MATURITY
 ```
 
 ### Example 2
-Deposit Amount: $50,000, Interest Rate: 1.7%, Investment Term: 2 years and 6 months, Interest Paid: MONTHLY
+
+Deposit Amount: $50,000, Interest Rate: 1.7%, Investment Term: 2 years and 6 months,
+Interest Paid: MONTHLY
 
 ```sh
 ./term_deposit_calculator.py -d 50000 -i 1.7 -t 2y6m -p MONTHLY
